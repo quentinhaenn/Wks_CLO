@@ -7,6 +7,12 @@
     <ownedOperation xmi:id="_RykkUDGrEeyhwPvP9hVVYw" name="WorkPower" visibility="private"/>
     <ownedOperation xmi:id="_T26aoDGrEeyhwPvP9hVVYw" name="Move"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_l2AS4DGqEeyhwPvP9hVVYw" name="ObjectType" memberEnd="_l2AS4TGqEeyhwPvP9hVVYw _l2AS5DGqEeyhwPvP9hVVYw" navigableOwnedEnd="_l2AS4TGqEeyhwPvP9hVVYw">
+    <ownedEnd xmi:id="_l2AS4TGqEeyhwPvP9hVVYw" name="eTypeObject" type="_G36qEDGqEeyhwPvP9hVVYw" association="_l2AS4DGqEeyhwPvP9hVVYw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2AS4jGqEeyhwPvP9hVVYw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l2AS4zGqEeyhwPvP9hVVYw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_WJERMDGwEeyhwPvP9hVVYw" name="MunitionDef" memberEnd="_WJERMTGwEeyhwPvP9hVVYw _WJERNDGwEeyhwPvP9hVVYw" navigableOwnedEnd="_WJERMTGwEeyhwPvP9hVVYw">
     <ownedEnd xmi:id="_WJERMTGwEeyhwPvP9hVVYw" name="munitions" type="_cMUCgDGvEeyhwPvP9hVVYw" association="_WJERMDGwEeyhwPvP9hVVYw">
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_WJERMjGwEeyhwPvP9hVVYw" value="1"/>
@@ -38,8 +44,7 @@
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mX1tQjGtEeyhwPvP9hVVYw" value="1"/>
           </ownedAttribute>
           <interfaceRealization xmi:id="_e-j1wDGxEeyhwPvP9hVVYw" client="_Ol-UMDGlEeyhwPvP9hVVYw" supplier="_akAWADGxEeyhwPvP9hVVYw" contract="_akAWADGxEeyhwPvP9hVVYw"/>
-          <interfaceRealization xmi:id="_1ANooDJtEeybZauDINuGMg" client="_Ol-UMDGlEeyhwPvP9hVVYw" supplier="_BKVRkDJtEeybZauDINuGMg" contract="_BKVRkDJtEeybZauDINuGMg"/>
-          <interfaceRealization xmi:id="_3K-3EDJtEeybZauDINuGMg" client="_Ol-UMDGlEeyhwPvP9hVVYw" supplier="_-undEDJsEeybZauDINuGMg" contract="_-undEDJsEeybZauDINuGMg"/>
+          <interfaceRealization xmi:id="_q5q6oDJmEeybZauDINuGMg" client="_Ol-UMDGlEeyhwPvP9hVVYw" supplier="_lQ4tMDJmEeybZauDINuGMg" contract="_lQ4tMDJmEeybZauDINuGMg"/>
           <ownedOperation xmi:id="_PkrwcDGrEeyhwPvP9hVVYw" name="Move"/>
           <ownedOperation xmi:id="_tmfXMDGrEeyhwPvP9hVVYw" name="Warrior" isStatic="true">
             <ownedParameter xmi:id="_4CajgDGrEeyhwPvP9hVVYw" name="Attack">
@@ -74,8 +79,6 @@
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:id="_Fu2tADJqEeybZauDINuGMg" name="GetWorkPower"/>
-          <ownedOperation xmi:id="_Je-vsDJqEeybZauDINuGMg" name="getNbInstance"/>
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_pqDiUDJlEeybZauDINuGMg" name="Monster">
@@ -88,9 +91,6 @@
           </ownedAttribute>
           <interfaceRealization xmi:id="_gSlpcDGxEeyhwPvP9hVVYw" client="_UqCvcDGlEeyhwPvP9hVVYw" supplier="_akAWADGxEeyhwPvP9hVVYw" contract="_akAWADGxEeyhwPvP9hVVYw"/>
           <interfaceRealization xmi:id="_qGi0kDJmEeybZauDINuGMg" client="_UqCvcDGlEeyhwPvP9hVVYw" supplier="_lQ4tMDJmEeybZauDINuGMg" contract="_lQ4tMDJmEeybZauDINuGMg"/>
-          <interfaceRealization xmi:id="_7R1NIDJsEeybZauDINuGMg" client="_UqCvcDGlEeyhwPvP9hVVYw" supplier="_8qF2ADJrEeybZauDINuGMg" contract="_8qF2ADJrEeybZauDINuGMg"/>
-          <interfaceRealization xmi:id="_wCPSwDJtEeybZauDINuGMg" client="_UqCvcDGlEeyhwPvP9hVVYw" supplier="_BKVRkDJtEeybZauDINuGMg" contract="_BKVRkDJtEeybZauDINuGMg"/>
-          <interfaceRealization xmi:id="_4GcZwDJtEeybZauDINuGMg" client="_UqCvcDGlEeyhwPvP9hVVYw" supplier="_-undEDJsEeybZauDINuGMg" contract="_-undEDJsEeybZauDINuGMg"/>
           <ownedOperation xmi:id="_LkuFgDGsEeyhwPvP9hVVYw" name="Move" isStatic="true"/>
           <ownedOperation xmi:id="_NE9wQDGsEeyhwPvP9hVVYw" name="Dragon" isStatic="true">
             <ownedParameter xmi:id="_PV54IDGsEeyhwPvP9hVVYw" name="Attack">
@@ -100,19 +100,47 @@
         </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_F3ZagDGlEeyhwPvP9hVVYw" name="AbstractAliveElement" visibility="public" isAbstract="true">
-        <generalization xmi:id="_-80N8DJoEeybZauDINuGMg" general="_3VQRkDJmEeybZauDINuGMg"/>
+        <ownedAttribute xmi:id="_iMj5QDGlEeyhwPvP9hVVYw" name="ObjectId" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iMj5QTGlEeyhwPvP9hVVYw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iMj5QjGlEeyhwPvP9hVVYw" value="1"/>
+        </ownedAttribute>
         <ownedAttribute xmi:id="_mgi28DGlEeyhwPvP9hVVYw" name="HP" visibility="protected">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgi28TGlEeyhwPvP9hVVYw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgi28jGlEeyhwPvP9hVVYw" value="1"/>
         </ownedAttribute>
+        <ownedOperation xmi:id="_XBst4DGmEeyhwPvP9hVVYw" name="GetCharacId" visibility="protected"/>
         <ownedOperation xmi:id="_n-llcDGpEeyhwPvP9hVVYw" name="GetHP" visibility="protected"/>
+        <ownedOperation xmi:id="_yeiWIDGpEeyhwPvP9hVVYw" name="AbstractCharacter(ETypeCharac type, Float HpMax )"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_G36qEDGqEeyhwPvP9hVVYw" name="ETypeObj" visibility="private">
+        <ownedAttribute xmi:id="_JLYhgDGqEeyhwPvP9hVVYw" name="Worker" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JLYhgTGqEeyhwPvP9hVVYw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JLYhgjGqEeyhwPvP9hVVYw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_l2AS5DGqEeyhwPvP9hVVYw" name="" type="_F3ZagDGlEeyhwPvP9hVVYw" association="_l2AS4DGqEeyhwPvP9hVVYw">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_l2AS5TGqEeyhwPvP9hVVYw"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_l2AS5jGqEeyhwPvP9hVVYw" value="*"/>
+        </ownedAttribute>
+        <ownedLiteral xmi:id="_LI0ekDGqEeyhwPvP9hVVYw" name="Worker">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_LI0ekTGqEeyhwPvP9hVVYw"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_MvUiUDGqEeyhwPvP9hVVYw" name="Warrior">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_MvUiUTGqEeyhwPvP9hVVYw" value="1"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_N03OEDGqEeyhwPvP9hVVYw" name="Dragon">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_N03OETGqEeyhwPvP9hVVYw" value="2"/>
+        </ownedLiteral>
+        <ownedLiteral xmi:id="_A7nt8DGuEeyhwPvP9hVVYw" name="Weapon" visibility="private">
+          <specification xmi:type="uml:LiteralInteger" xmi:id="_A7nt8TGuEeyhwPvP9hVVYw" value="3"/>
+        </ownedLiteral>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_iI7TMDJlEeybZauDINuGMg" name="InanimateElement">
       <packagedElement xmi:type="uml:Package" xmi:id="_ltrzYDJlEeybZauDINuGMg" name="Weapon">
         <packagedElement xmi:type="uml:Class" xmi:id="_MHKvcDGlEeyhwPvP9hVVYw" name="AbstractWeapon" visibility="public" isAbstract="true">
-          <generalization xmi:id="_9sCikDJoEeybZauDINuGMg" general="_zXKEUDJmEeybZauDINuGMg"/>
           <ownedAttribute xmi:id="_vkChoDGuEeyhwPvP9hVVYw" name="Munitions" visibility="protected" type="_cMUCgDGvEeyhwPvP9hVVYw">
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vkChoTGuEeyhwPvP9hVVYw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vkChojGuEeyhwPvP9hVVYw" value="1"/>
@@ -127,14 +155,13 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ckbz8TGwEeyhwPvP9hVVYw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ckbz8jGwEeyhwPvP9hVVYw" value="1"/>
           </ownedAttribute>
-          <ownedOperation xmi:id="_LzrnMDGvEeyhwPvP9hVVYw" name="Reload" visibility="protected"/>
+          <ownedOperation xmi:id="_LzrnMDGvEeyhwPvP9hVVYw" name="Reload" visibility="protected" isAbstract="true"/>
           <ownedOperation xmi:id="_jbyEcDGwEeyhwPvP9hVVYw" name="AbstractWeapon" visibility="protected">
             <ownedParameter xmi:id="_m_Cv0DGwEeyhwPvP9hVVYw" name="MunitionType" type="_cMUCgDGvEeyhwPvP9hVVYw"/>
             <ownedParameter xmi:id="_0QL1wDGwEeyhwPvP9hVVYw" name="munLoaded">
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             </ownedParameter>
           </ownedOperation>
-          <ownedOperation xmi:id="_cd5tQDJpEeybZauDINuGMg" name="GetMunitions"/>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_cMUCgDGvEeyhwPvP9hVVYw" name="Munition" visibility="public">
           <ownedAttribute xmi:id="_kECzwDGvEeyhwPvP9hVVYw" name="power" visibility="public">
@@ -152,64 +179,21 @@
           </ownedAttribute>
           <interfaceRealization xmi:id="_g0O98DGxEeyhwPvP9hVVYw" client="_WI89cDGlEeyhwPvP9hVVYw" supplier="_akAWADGxEeyhwPvP9hVVYw" contract="_akAWADGxEeyhwPvP9hVVYw"/>
           <interfaceRealization xmi:id="_pM7sADJmEeybZauDINuGMg" client="_WI89cDGlEeyhwPvP9hVVYw" supplier="_lQ4tMDJmEeybZauDINuGMg" contract="_lQ4tMDJmEeybZauDINuGMg"/>
-          <interfaceRealization xmi:id="_6VmOYDJsEeybZauDINuGMg" client="_WI89cDGlEeyhwPvP9hVVYw" supplier="_8qF2ADJrEeybZauDINuGMg" contract="_8qF2ADJrEeybZauDINuGMg"/>
-          <interfaceRealization xmi:id="_uvNkoDJtEeybZauDINuGMg" client="_WI89cDGlEeyhwPvP9hVVYw" supplier="_BKVRkDJtEeybZauDINuGMg" contract="_BKVRkDJtEeybZauDINuGMg"/>
-          <interfaceRealization xmi:id="_55frwDJtEeybZauDINuGMg" client="_WI89cDGlEeyhwPvP9hVVYw" supplier="_-undEDJsEeybZauDINuGMg" contract="_-undEDJsEeybZauDINuGMg"/>
-          <ownedOperation xmi:id="_us6lADGxEeyhwPvP9hVVYw" name="Associate">
-            <ownedParameter xmi:id="_fXxdYDJpEeybZauDINuGMg" name="warrior" type="_Ol-UMDGlEeyhwPvP9hVVYw"/>
-          </ownedOperation>
+          <ownedOperation xmi:id="_us6lADGxEeyhwPvP9hVVYw" name="Associate"/>
           <ownedOperation xmi:id="_iHKjMDJmEeybZauDINuGMg" name="Attack"/>
-          <ownedOperation xmi:id="_nZTq4DJpEeybZauDINuGMg" name="IsAssociated"/>
         </packagedElement>
       </packagedElement>
-      <packagedElement xmi:type="uml:Class" xmi:id="_zXKEUDJmEeybZauDINuGMg" name="AbstractInanimateElement" visibility="public" isAbstract="true">
-        <generalization xmi:id="_-XALIDJoEeybZauDINuGMg" general="_3VQRkDJmEeybZauDINuGMg"/>
-        <ownedAttribute xmi:id="_Hkz-gDJpEeybZauDINuGMg" name="Resistance" visibility="protected">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hkz-gTJpEeybZauDINuGMg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hkz-gjJpEeybZauDINuGMg" value="1"/>
-        </ownedAttribute>
-        <ownedOperation xmi:id="_OtqQgDJpEeybZauDINuGMg" name="GetResistance" visibility="protected"/>
-      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_zXKEUDJmEeybZauDINuGMg" name="AbstractInanimateElement" visibility="public" isAbstract="true"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_UK3ncDJmEeybZauDINuGMg" name="Actions">
       <packagedElement xmi:type="uml:Interface" xmi:id="_akAWADGxEeyhwPvP9hVVYw" name="Movements" visibility="public" isAbstract="true">
         <ownedOperation xmi:id="_cuOK0DGxEeyhwPvP9hVVYw" name="Move" isAbstract="true"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_lQ4tMDJmEeybZauDINuGMg" name="IAttack" visibility="public">
-        <ownedOperation xmi:id="_nCGzMDJmEeybZauDINuGMg" name="Attack" isAbstract="true">
-          <ownedParameter xmi:id="_8ffFUDJnEeybZauDINuGMg" name="target" type="_8qF2ADJrEeybZauDINuGMg"/>
-        </ownedOperation>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_8qF2ADJrEeybZauDINuGMg" name="IAttacked" visibility="public">
-        <ownedOperation xmi:id="_-H0YQDJrEeybZauDINuGMg" name="Attacked">
-          <ownedParameter xmi:id="__wQVsDJrEeybZauDINuGMg" name="power">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-        </ownedOperation>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_-undEDJsEeybZauDINuGMg" name="IEarthAttack" visibility="public">
-        <ownedOperation xmi:id="_Dy4oMDJtEeybZauDINuGMg" name="EarthAttack">
-          <ownedParameter xmi:id="_Y6FEYDJtEeybZauDINuGMg" name="target" type="_BKVRkDJtEeybZauDINuGMg"/>
-        </ownedOperation>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_BKVRkDJtEeybZauDINuGMg" name="IEarthAttacked" visibility="public">
-        <ownedOperation xmi:id="_dPHyADJtEeybZauDINuGMg" name="EarthAttacked">
-          <ownedParameter xmi:id="_h_0g4DJtEeybZauDINuGMg" name="Power">
-            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
-          </ownedParameter>
-        </ownedOperation>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_lQ4tMDJmEeybZauDINuGMg" name="Attacks" visibility="public">
+        <ownedOperation xmi:id="_nCGzMDJmEeybZauDINuGMg" name="Attack" isAbstract="true"/>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Class" xmi:id="_3VQRkDJmEeybZauDINuGMg" name="AbstractGameElement" visibility="public" isAbstract="true">
-      <ownedAttribute xmi:id="_iMj5QDGlEeyhwPvP9hVVYw" name="ObjectId" visibility="protected">
-        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iMj5QTGlEeyhwPvP9hVVYw" value="1"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iMj5QjGlEeyhwPvP9hVVYw" value="1"/>
-      </ownedAttribute>
-      <ownedOperation xmi:id="_XBst4DGmEeyhwPvP9hVVYw" name="GetCharacId" visibility="protected"/>
-      <ownedOperation xmi:id="_yeiWIDGpEeyhwPvP9hVVYw" name="AbstractGameElement"/>
-    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3VQRkDJmEeybZauDINuGMg" name="AbstractGameElement" visibility="public" isAbstract="true"/>
     <packagedElement xmi:type="uml:Package" xmi:id="_Buq8cDJnEeybZauDINuGMg" name="Base">
       <packagedElement xmi:type="uml:Class" xmi:id="_DDn9MDJnEeybZauDINuGMg" name="Base" visibility="public">
         <ownedAttribute xmi:id="_aP_WIDJnEeybZauDINuGMg" name="BaseName" visibility="public">
@@ -225,26 +209,6 @@
         <ownedLiteral xmi:id="_Ppf4kDJnEeybZauDINuGMg" name="Vert"/>
         <ownedLiteral xmi:id="_QTl-cDJnEeybZauDINuGMg" name="Blouge"/>
       </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_iJdFYDJqEeybZauDINuGMg" memberEnd="_iJdFYTJqEeybZauDINuGMg _iJdFZDJqEeybZauDINuGMg" navigableOwnedEnd="_iJdFZDJqEeybZauDINuGMg">
-        <ownedEnd xmi:id="_iJdFYTJqEeybZauDINuGMg" name="" type="_DDn9MDJnEeybZauDINuGMg" association="_iJdFYDJqEeybZauDINuGMg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iJdFYjJqEeybZauDINuGMg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iJdFYzJqEeybZauDINuGMg"/>
-        </ownedEnd>
-        <ownedEnd xmi:id="_iJdFZDJqEeybZauDINuGMg" name="eBaseColors" type="_KcLfIDJnEeybZauDINuGMg" association="_iJdFYDJqEeybZauDINuGMg">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iJdFZTJqEeybZauDINuGMg"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iJdFZjJqEeybZauDINuGMg" value="*"/>
-        </ownedEnd>
-      </packagedElement>
-    </packagedElement>
-    <packagedElement xmi:type="uml:Association" xmi:id="_mhp0sDJqEeybZauDINuGMg" memberEnd="_mhp0sTJqEeybZauDINuGMg _mhp0tDJqEeybZauDINuGMg" navigableOwnedEnd="_mhp0tDJqEeybZauDINuGMg">
-      <ownedEnd xmi:id="_mhp0sTJqEeybZauDINuGMg" name="" type="_3VQRkDJmEeybZauDINuGMg" association="_mhp0sDJqEeybZauDINuGMg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mhp0sjJqEeybZauDINuGMg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mhp0szJqEeybZauDINuGMg"/>
-      </ownedEnd>
-      <ownedEnd xmi:id="_mhp0tDJqEeybZauDINuGMg" name="bases" type="_DDn9MDJnEeybZauDINuGMg" association="_mhp0sDJqEeybZauDINuGMg">
-        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mhp0tTJqEeybZauDINuGMg"/>
-        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mhp0tjJqEeybZauDINuGMg" value="1"/>
-      </ownedEnd>
     </packagedElement>
   </packagedElement>
 </uml:Model>
