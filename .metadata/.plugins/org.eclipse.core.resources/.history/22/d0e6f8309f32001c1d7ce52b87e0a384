@@ -21,8 +21,8 @@
     <packagedElement xmi:type="uml:Package" xmi:id="_fDsnoDJlEeybZauDINuGMg" name="AliveElement">
       <packagedElement xmi:type="uml:Package" xmi:id="_noHfwDJlEeybZauDINuGMg" name="Human">
         <packagedElement xmi:type="uml:Class" xmi:id="_Ol-UMDGlEeyhwPvP9hVVYw" name="Warrior" visibility="public">
-          <generalization xmi:id="_f8WIEDJ_EeybZauDINuGMg" general="_GiJloDJ_EeybZauDINuGMg"/>
-          <ownedAttribute xmi:id="_JomzkDGrEeyhwPvP9hVVYw" name="AttackPower" visibility="private">
+          <generalization xmi:id="_GsMa4DGtEeyhwPvP9hVVYw" general="_F3ZagDGlEeyhwPvP9hVVYw"/>
+          <ownedAttribute xmi:id="_JomzkDGrEeyhwPvP9hVVYw" name="Attack" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_JomzkTGrEeyhwPvP9hVVYw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_JomzkjGrEeyhwPvP9hVVYw" value="1"/>
@@ -37,6 +37,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mX1tQTGtEeyhwPvP9hVVYw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mX1tQjGtEeyhwPvP9hVVYw" value="1"/>
           </ownedAttribute>
+          <interfaceRealization xmi:id="_e-j1wDGxEeyhwPvP9hVVYw" client="_Ol-UMDGlEeyhwPvP9hVVYw" supplier="_akAWADGxEeyhwPvP9hVVYw" contract="_akAWADGxEeyhwPvP9hVVYw"/>
           <interfaceRealization xmi:id="_1ANooDJtEeybZauDINuGMg" client="_Ol-UMDGlEeyhwPvP9hVVYw" supplier="_BKVRkDJtEeybZauDINuGMg" contract="_BKVRkDJtEeybZauDINuGMg"/>
           <interfaceRealization xmi:id="_3K-3EDJtEeybZauDINuGMg" client="_Ol-UMDGlEeyhwPvP9hVVYw" supplier="_-undEDJsEeybZauDINuGMg" contract="_-undEDJsEeybZauDINuGMg"/>
           <ownedOperation xmi:id="_PkrwcDGrEeyhwPvP9hVVYw" name="Move"/>
@@ -55,7 +56,7 @@
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_mnj2MDGrEeyhwPvP9hVVYw" name="Worker" visibility="public">
-          <generalization xmi:id="_fVTWMDJ_EeybZauDINuGMg" general="_GiJloDJ_EeybZauDINuGMg"/>
+          <generalization xmi:id="_FekKIDGtEeyhwPvP9hVVYw" general="_F3ZagDGlEeyhwPvP9hVVYw"/>
           <ownedAttribute xmi:id="_oqU_MDGrEeyhwPvP9hVVYw" name="WorkPower" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oqU_MTGrEeyhwPvP9hVVYw"/>
@@ -66,6 +67,7 @@
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h1qYATGsEeyhwPvP9hVVYw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h1qYAjGsEeyhwPvP9hVVYw" value="1"/>
           </ownedAttribute>
+          <interfaceRealization xmi:id="_fn1cQDGxEeyhwPvP9hVVYw" client="_mnj2MDGrEeyhwPvP9hVVYw" supplier="_akAWADGxEeyhwPvP9hVVYw" contract="_akAWADGxEeyhwPvP9hVVYw"/>
           <ownedOperation xmi:id="_qmJysDGrEeyhwPvP9hVVYw" name="Move"/>
           <ownedOperation xmi:id="_DkUgcDGsEeyhwPvP9hVVYw" name="Worker" isStatic="true">
             <ownedParameter xmi:id="_F0elMDGsEeyhwPvP9hVVYw" name="WorkPower">
@@ -75,18 +77,11 @@
           <ownedOperation xmi:id="_Fu2tADJqEeybZauDINuGMg" name="GetWorkPower"/>
           <ownedOperation xmi:id="_Je-vsDJqEeybZauDINuGMg" name="getNbInstance"/>
         </packagedElement>
-        <packagedElement xmi:type="uml:Class" xmi:id="_GiJloDJ_EeybZauDINuGMg" name="AbstractHuman" visibility="public" isAbstract="true">
-          <generalization xmi:id="_h6EZADJ_EeybZauDINuGMg" general="_F3ZagDGlEeyhwPvP9hVVYw"/>
-          <interfaceRealization xmi:id="_e-j1wDGxEeyhwPvP9hVVYw" client="_GiJloDJ_EeybZauDINuGMg" supplier="_akAWADGxEeyhwPvP9hVVYw" contract="_akAWADGxEeyhwPvP9hVVYw"/>
-          <ownedOperation xmi:id="_LpWwADJ_EeybZauDINuGMg" name="Talk">
-            <ownedParameter xmi:id="_TtBEcDJ_EeybZauDINuGMg" name="interlocutor" type="_GiJloDJ_EeybZauDINuGMg"/>
-          </ownedOperation>
-        </packagedElement>
       </packagedElement>
       <packagedElement xmi:type="uml:Package" xmi:id="_pqDiUDJlEeybZauDINuGMg" name="Monster">
         <packagedElement xmi:type="uml:Class" xmi:id="_UqCvcDGlEeyhwPvP9hVVYw" name="Dragon" visibility="public">
           <generalization xmi:id="_E3p7IDGtEeyhwPvP9hVVYw" general="_F3ZagDGlEeyhwPvP9hVVYw"/>
-          <ownedAttribute xmi:id="_YfUwMDGrEeyhwPvP9hVVYw" name="AttackPower" visibility="private">
+          <ownedAttribute xmi:id="_YfUwMDGrEeyhwPvP9hVVYw" name="Attack" visibility="private">
             <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
             <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_YfUwMTGrEeyhwPvP9hVVYw" value="1"/>
             <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_YfUwMjGrEeyhwPvP9hVVYw" value="1"/>

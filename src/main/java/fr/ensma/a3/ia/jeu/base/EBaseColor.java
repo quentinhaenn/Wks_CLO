@@ -1,4 +1,5 @@
 package fr.ensma.a3.ia.jeu.base;
 
-public class EBaseColor {
+public enum EBaseColor {
+    Bleu, Jaune, Rouge, Vert, Blouge
 }

@@ -3,7 +3,7 @@ package fr.ensma.a3.ia.jeu.AliveElement;
 import fr.ensma.a3.ia.jeu.AbstractGameElement;
 
 public abstract class AbstractAliveElement extends AbstractGameElement {
-    private float hp;
+    protected float hp;
 
     public AbstractAliveElement(String id, float newHp){
         super(id);

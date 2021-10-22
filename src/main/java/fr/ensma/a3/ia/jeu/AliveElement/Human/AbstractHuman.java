@@ -14,4 +14,9 @@ public abstract class AbstractHuman
     public String Talk(AbstractHuman interlocutor, String sentence){
         return sentence;
     }
+
+    @Override
+    public void Move() {
+
+    }
 }
