@@ -4,6 +4,11 @@ public class Munitions {
     private int power;
     private int magazineSize;
 
+    public Munitions(int power, int magazineSize){
+        this.power = power;
+        this.magazineSize = magazineSize;
+    }
+
     public int getMagazineSize() {
         return magazineSize;
     }

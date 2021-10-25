@@ -1,6 +1,7 @@
 package fr.ensma.a3.ia.jeu.AliveElement;
 
 import fr.ensma.a3.ia.jeu.AbstractGameElement;
+import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
 
@@ -10,7 +11,9 @@ public abstract class AbstractAliveElement
     protected float hp;
     protected String id;
 
-    public AbstractAliveElement(String newId, float newHp){
+    public AbstractAliveElement(Base base, String newId, float newHp){
+        super(base);
+        this.base.addAliveElement(this);
         hp = newHp;
         id = newId;
     }
@@ -42,5 +45,10 @@ public abstract class AbstractAliveElement
     @Override
     public String GetId() {
         return this.id;
+    }
+
+    @Override
+    public void alarm() {
+        System.out.println("Nous sommes attaqués! Tous à la base!\n");
     }
 }

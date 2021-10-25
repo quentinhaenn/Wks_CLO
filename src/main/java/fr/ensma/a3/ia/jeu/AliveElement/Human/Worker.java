@@ -3,6 +3,7 @@ package fr.ensma.a3.ia.jeu.AliveElement.Human;
 import fr.ensma.a3.ia.jeu.actions.IAttacked;
 import fr.ensma.a3.ia.jeu.actions.IEarthAttacked;
 import fr.ensma.a3.ia.jeu.actions.IMovements;
+import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
 
@@ -14,14 +15,14 @@ public class Worker extends AbstractHuman
     private final int workPower;
 
 
-    public Worker(String id, float newHp, int workPower) {
-        super(id, newHp);
+    public Worker(Base base, String id, float newHp, int workPower) {
+        super(base, id, newHp);
         this.workPower = workPower;
         nbInstance += 1;
     }
 
-    public Worker(float newHp, int workPower) {
-        super(newId, newHp);
+    public Worker(Base base, float newHp, int workPower) {
+        super(base, newId, newHp);
         this.workPower = workPower;
         nbInstance += 1;
     }

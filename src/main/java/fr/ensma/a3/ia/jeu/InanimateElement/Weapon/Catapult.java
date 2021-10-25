@@ -2,6 +2,7 @@ package fr.ensma.a3.ia.jeu.InanimateElement.Weapon;
 
 import fr.ensma.a3.ia.jeu.AliveElement.Human.Warrior;
 import fr.ensma.a3.ia.jeu.actions.*;
+import fr.ensma.a3.ia.jeu.base.Base;
 
 public class Catapult
         extends AbstractWeapon
@@ -10,9 +11,10 @@ public class Catapult
     private boolean isAssociated;
     private Warrior user;
 
-    public Catapult(String id, float resistance, Munitions mun) {
-        super(id, resistance, mun);
+    public Catapult(Base base, String id, float resistance, Munitions mun) {
+        super(base, id, resistance, mun);
         isAssociated = false;
+        user = null;
     }
 
     public boolean IsAssociated(){
@@ -20,8 +22,7 @@ public class Catapult
     }
 
     public void setAssociated(Warrior warrior){
-        if (!warrior.isAssociated()){
-            warrior.Associate(this);
+        if (this.user == null || !this.user.equals(warrior)){
             this.isAssociated = true;
             this.user = warrior;
         }
@@ -50,5 +51,9 @@ public class Catapult
     @Override
     public void Move() {
         System.out.println("La catapulte bouge... \n");
+    }
+
+    public Warrior getUser() {
+        return user;
     }
 }

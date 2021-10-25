@@ -4,6 +4,7 @@ import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.Catapult;
 import fr.ensma.a3.ia.jeu.actions.IEarthAttack;
 import fr.ensma.a3.ia.jeu.actions.IEarthAttacked;
 import fr.ensma.a3.ia.jeu.actions.IMovements;
+import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
 
@@ -13,27 +14,27 @@ public class Warrior
         IEarthAttack,
         IEarthAttacked {
     private final int attackPower;
-    private static int nbInstance;
+    private static int nbInstance = 0;
     private boolean isAssociated;
     private static final String newId = "Warrior_" + nbInstance + 1;
 
-    public Warrior(String id, float newHp, int attack) {
-        super(id, newHp);
+    public Warrior(Base base, String id, float newHp, int attack) {
+        super(base, id, newHp);
+        attackPower = attack;
+        nbInstance ++;
+    }
+
+    public Warrior(Base base, float newHp, int attack){
+        super(base,newId, newHp);
         attackPower = attack;
         nbInstance += 1;
     }
 
-    public Warrior(float newHp, int attack){
-        super(newId, newHp);
-        attackPower = attack;
-        nbInstance += 1;
-    }
-
-    public boolean Associate(Catapult catapult){
+    public void Associate(Catapult catapult){
         if (!this.isAssociated){
             this.isAssociated = true;
-            return true;
-        }else return false;
+            catapult.setAssociated(this);
+        }
     }
     public boolean isAssociated(){
         return isAssociated;
@@ -66,10 +67,9 @@ public class Warrior
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Warrior)) return false;
+        if (!(o instanceof Warrior warrior)) return false;
         if (!super.equals(o)) return false;
-        Warrior warrior = (Warrior) o;
-        return attackPower == warrior.attackPower && nbInstance == warrior.nbInstance && isAssociated() == warrior.isAssociated();
+        return attackPower == warrior.attackPower && isAssociated() == warrior.isAssociated();
     }
 
     @Override

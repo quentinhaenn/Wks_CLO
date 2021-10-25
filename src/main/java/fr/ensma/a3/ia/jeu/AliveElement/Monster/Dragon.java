@@ -2,6 +2,7 @@ package fr.ensma.a3.ia.jeu.AliveElement.Monster;
 
 import fr.ensma.a3.ia.jeu.AliveElement.AbstractAliveElement;
 import fr.ensma.a3.ia.jeu.actions.*;
+import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
 
@@ -12,8 +13,8 @@ public class Dragon
     private final int attackPower;
     private static int nbInstances;
 
-    public Dragon(String id, float newHp, int attackPower) {
-        super(id, newHp);
+    public Dragon(Base base, String id, float newHp, int attackPower) {
+        super(base, id, newHp);
         this.attackPower = attackPower;
         nbInstances +=1 ;
     }

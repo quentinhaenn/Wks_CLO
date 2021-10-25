@@ -1,6 +1,7 @@
 package fr.ensma.a3.ia.jeu.InanimateElement.Weapon;
 
 import fr.ensma.a3.ia.jeu.InanimateElement.AbstractInanimateElement;
+import fr.ensma.a3.ia.jeu.base.Base;
 
 public class AbstractWeapon
         extends AbstractInanimateElement {
@@ -10,8 +11,8 @@ public class AbstractWeapon
     protected int remainingMunition;
 
 
-    public AbstractWeapon(String id, float newResistance, Munitions mun) {
-        super(id, newResistance);
+    public AbstractWeapon(Base base, String id, float newResistance, Munitions mun) {
+        super(base, id, newResistance);
         munitions = mun;
         munitionLoaded = mun.getMagazineSize();
         remainingMunition = munitionLoaded;

@@ -6,5 +6,5 @@ public interface IAliveElement {
         return null;
     }
 
-    public default void alarm() {}
+    default void alarm() {}
 }
