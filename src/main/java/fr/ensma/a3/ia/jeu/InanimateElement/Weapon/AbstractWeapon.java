@@ -10,8 +10,8 @@ public class AbstractWeapon
     protected int remainingMunition;
 
 
-    public AbstractWeapon(String id, Munitions mun) {
-        super(id);
+    public AbstractWeapon(String id, float newResistance, Munitions mun) {
+        super(id, newResistance);
         munitions = mun;
         munitionLoaded = mun.getMagazineSize();
         remainingMunition = munitionLoaded;

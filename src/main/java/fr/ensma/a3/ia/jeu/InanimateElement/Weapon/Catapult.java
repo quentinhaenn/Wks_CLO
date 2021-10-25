@@ -6,10 +6,13 @@ import fr.ensma.a3.ia.jeu.actions.*;
 public class Catapult
         extends AbstractWeapon
         implements IAttack, IEarthAttack, IEarthAttacked, IAttacked, IMovements {
-    private boolean isAssociated;
 
-    public Catapult(String id, Munitions mun) {
-        super(id, mun);
+    private boolean isAssociated;
+    private Warrior user;
+
+    public Catapult(String id, float resistance, Munitions mun) {
+        super(id, resistance, mun);
+        isAssociated = false;
     }
 
     public boolean IsAssociated(){
@@ -20,6 +23,7 @@ public class Catapult
         if (!warrior.isAssociated()){
             warrior.Associate(this);
             this.isAssociated = true;
+            this.user = warrior;
         }
     }
 
@@ -45,6 +49,6 @@ public class Catapult
 
     @Override
     public void Move() {
-
+        System.out.println("La catapulte bouge... \n");
     }
 }

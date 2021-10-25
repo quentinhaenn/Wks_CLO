@@ -3,14 +3,19 @@ package fr.ensma.a3.ia.jeu.AliveElement.Monster;
 import fr.ensma.a3.ia.jeu.AliveElement.AbstractAliveElement;
 import fr.ensma.a3.ia.jeu.actions.*;
 
+import java.util.Objects;
+
 public class Dragon
         extends AbstractAliveElement
         implements IMovements, IAttacked, IAttack, IEarthAttacked, IEarthAttack {
 
-    private int attackPower;
+    private final int attackPower;
+    private static int nbInstances;
 
-    public Dragon(String id, float newHp) {
+    public Dragon(String id, float newHp, int attackPower) {
         super(id, newHp);
+        this.attackPower = attackPower;
+        nbInstances +=1 ;
     }
 
     @Override
@@ -35,6 +40,27 @@ public class Dragon
 
     @Override
     public void Move() {
+        System.out.println("Je vole!\n");
+    }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Dragon dragon)) return false;
+        if (!super.equals(o)) return false;
+        return attackPower == dragon.attackPower;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), attackPower);
+    }
+
+    @Override
+    public String toString() {
+        return "Dragon{" +
+                "hp=" + hp +
+                ", attackPower=" + attackPower +
+                '}';
     }
 }
