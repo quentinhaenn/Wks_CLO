@@ -111,28 +111,7 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mgi28TGlEeyhwPvP9hVVYw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mgi28jGlEeyhwPvP9hVVYw" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_Ip1VUDVoEeyAorNhafOQBw" name="Id" visibility="protected">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ip1VUTVoEeyAorNhafOQBw" value="1"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ip1VUjVoEeyAorNhafOQBw" value="1"/>
-        </ownedAttribute>
-        <interfaceRealization xmi:id="_3WSUcDVoEeyAorNhafOQBw" client="_F3ZagDGlEeyhwPvP9hVVYw" supplier="_WJf_cDVoEeyAorNhafOQBw" contract="_WJf_cDVoEeyAorNhafOQBw"/>
         <ownedOperation xmi:id="_n-llcDGpEeyhwPvP9hVVYw" name="GetHP" visibility="protected"/>
-        <ownedOperation xmi:id="_J3T1EDVoEeyAorNhafOQBw" name="GetCharacId" visibility="protected"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_uZEeoDVkEeyAorNhafOQBw" name="" visibility="public"/>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_WJf_cDVoEeyAorNhafOQBw" name="IAliveElement" visibility="public">
-        <ownedOperation xmi:id="_td0agDVoEeyAorNhafOQBw" name="GetId"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_43gPkDVoEeyAorNhafOQBw" memberEnd="_43gPkTVoEeyAorNhafOQBw _43gPlDVoEeyAorNhafOQBw" navigableOwnedEnd="_43gPkTVoEeyAorNhafOQBw">
-        <ownedEnd xmi:id="_43gPkTVoEeyAorNhafOQBw" name="iAliveElements" type="_WJf_cDVoEeyAorNhafOQBw" association="_43gPkDVoEeyAorNhafOQBw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_43gPkjVoEeyAorNhafOQBw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_43gPkzVoEeyAorNhafOQBw" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:id="_43gPlDVoEeyAorNhafOQBw" name="bases" type="_DDn9MDJnEeybZauDINuGMg" association="_43gPkDVoEeyAorNhafOQBw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_43gPlTVoEeyAorNhafOQBw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_43gPljVoEeyAorNhafOQBw"/>
-        </ownedEnd>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_iI7TMDJlEeybZauDINuGMg" name="InanimateElement">
@@ -195,27 +174,7 @@
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Hkz-gTJpEeybZauDINuGMg"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Hkz-gjJpEeybZauDINuGMg" value="1"/>
         </ownedAttribute>
-        <ownedAttribute xmi:id="_QoE-QDVoEeyAorNhafOQBw" name="ObjectId" visibility="protected">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_QoE-QTVoEeyAorNhafOQBw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_QoE-QjVoEeyAorNhafOQBw" value="1"/>
-        </ownedAttribute>
-        <interfaceRealization xmi:id="_Id5VoDVpEeyAorNhafOQBw" client="_zXKEUDJmEeybZauDINuGMg" supplier="_D86dwDVpEeyAorNhafOQBw" contract="_D86dwDVpEeyAorNhafOQBw"/>
         <ownedOperation xmi:id="_OtqQgDJpEeybZauDINuGMg" name="GetResistance" visibility="protected"/>
-        <ownedOperation xmi:id="_O8ls0DVoEeyAorNhafOQBw" name="GetObjectId" visibility="protected"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Interface" xmi:id="_D86dwDVpEeyAorNhafOQBw" name="IObject" visibility="public">
-        <ownedOperation xmi:id="_F1An0DVpEeyAorNhafOQBw" name="GetObjectId"/>
-      </packagedElement>
-      <packagedElement xmi:type="uml:Association" xmi:id="_L3GtIDVpEeyAorNhafOQBw" memberEnd="_L3GtITVpEeyAorNhafOQBw _L3GtJDVpEeyAorNhafOQBw" navigableOwnedEnd="_L3GtITVpEeyAorNhafOQBw">
-        <ownedEnd xmi:id="_L3GtITVpEeyAorNhafOQBw" name="iObjects" type="_D86dwDVpEeyAorNhafOQBw" association="_L3GtIDVpEeyAorNhafOQBw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L3GtIjVpEeyAorNhafOQBw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L3GtIzVpEeyAorNhafOQBw" value="*"/>
-        </ownedEnd>
-        <ownedEnd xmi:id="_L3GtJDVpEeyAorNhafOQBw" name="bases" type="_DDn9MDJnEeybZauDINuGMg" association="_L3GtIDVpEeyAorNhafOQBw">
-          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L3GtJTVpEeyAorNhafOQBw"/>
-          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L3GtJjVpEeyAorNhafOQBw"/>
-        </ownedEnd>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_UK3ncDJmEeybZauDINuGMg" name="Actions">
@@ -248,6 +207,12 @@
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_3VQRkDJmEeybZauDINuGMg" name="AbstractGameElement" visibility="public" isAbstract="true">
+      <ownedAttribute xmi:id="_iMj5QDGlEeyhwPvP9hVVYw" name="ObjectId" visibility="protected">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iMj5QTGlEeyhwPvP9hVVYw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iMj5QjGlEeyhwPvP9hVVYw" value="1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XBst4DGmEeyhwPvP9hVVYw" name="GetCharacId" visibility="protected"/>
       <ownedOperation xmi:id="_yeiWIDGpEeyhwPvP9hVVYw" name="AbstractGameElement"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_Buq8cDJnEeybZauDINuGMg" name="Base">
