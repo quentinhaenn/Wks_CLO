@@ -1,9 +1,7 @@
 package fr.ensma.a3.ia.jeu.AliveElement.Human;
 
 import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.Catapult;
-import fr.ensma.a3.ia.jeu.actions.IEarthAttack;
-import fr.ensma.a3.ia.jeu.actions.IEarthAttacked;
-import fr.ensma.a3.ia.jeu.actions.IMovable;
+import fr.ensma.a3.ia.jeu.actions.*;
 import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
@@ -17,6 +15,7 @@ public class Warrior
     private static int nbInstance = 0;
     private boolean isAssociated;
     private static final String newId = "Warrior_" + nbInstance + 1;
+    private String weapon = "Knife";
 
     public Warrior(Base base, String id, float newHp, int attack) {
         super(base, id, newHp);
@@ -84,6 +83,7 @@ public class Warrior
                 ", attackPower=" + attackPower +
                 ", nbInstance=" + nbInstance +
                 ", isAssociated=" + isAssociated +
+                ", Weapon = " + weapon +
                 '}';
     }
 }

@@ -748,3 +748,54 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:20:06.931
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:20:06.932
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:20:06.932
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:20:06.933
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:11.238
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:11.239
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:11.239
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:11.240
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:11.240
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:11.241
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:20.601
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:25.403
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:25.403
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:25.404
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:21:25.404
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:22:47.944
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
+
+!ENTRY org.eclipse.sirius.diagram 2 0 2021-11-12 16:22:47.944
+!MESSAGE This kind of diagram element (org.eclipse.sirius.diagram.business.internal.metamodel.spec.DNodeListElementSpec) is not yet managed by the LayoutDataManager.
