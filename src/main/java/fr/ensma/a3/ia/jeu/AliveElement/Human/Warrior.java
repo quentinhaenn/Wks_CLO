@@ -3,14 +3,14 @@ package fr.ensma.a3.ia.jeu.AliveElement.Human;
 import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.Catapult;
 import fr.ensma.a3.ia.jeu.actions.IEarthAttack;
 import fr.ensma.a3.ia.jeu.actions.IEarthAttacked;
-import fr.ensma.a3.ia.jeu.actions.IMovements;
+import fr.ensma.a3.ia.jeu.actions.IMovable;
 import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
 
 public class Warrior
         extends AbstractHuman
-        implements IMovements,
+        implements IMovable,
         IEarthAttack,
         IEarthAttacked {
     private final int attackPower;

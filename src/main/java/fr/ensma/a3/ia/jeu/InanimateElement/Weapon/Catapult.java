@@ -6,7 +6,7 @@ import fr.ensma.a3.ia.jeu.base.Base;
 
 public class Catapult
         extends AbstractWeapon
-        implements IAttack, IEarthAttack, IEarthAttacked, IAttacked, IMovements {
+        implements IAttack, IEarthAttack, IEarthAttacked, IAttacked, IMovable {
 
     private boolean isAssociated;
     private Warrior user;

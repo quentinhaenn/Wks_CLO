@@ -2,13 +2,13 @@ package fr.ensma.a3.ia.jeu.AliveElement.Human;
 
 import fr.ensma.a3.ia.jeu.actions.IAttacked;
 import fr.ensma.a3.ia.jeu.actions.IEarthAttacked;
-import fr.ensma.a3.ia.jeu.actions.IMovements;
+import fr.ensma.a3.ia.jeu.actions.IMovable;
 import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
 
 public class Worker extends AbstractHuman
-        implements IAttacked, IEarthAttacked, IMovements {
+        implements IAttacked, IEarthAttacked, IMovable {
 
     private static int nbInstance;
     private static final String newId = "Worker_" + nbInstance + 1;

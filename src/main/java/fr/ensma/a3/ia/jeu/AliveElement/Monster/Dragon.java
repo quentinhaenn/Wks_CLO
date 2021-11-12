@@ -8,7 +8,7 @@ import java.util.Objects;
 
 public class Dragon
         extends AbstractAliveElement
-        implements IMovements, IAttacked, IAttack, IEarthAttacked, IEarthAttack {
+        implements IMovable, IAttacked, IAttack, IEarthAttacked, IEarthAttack {
 
     private final int attackPower;
     private static int nbInstances;
@@ -17,6 +17,7 @@ public class Dragon
         super(base, id, newHp);
         this.attackPower = attackPower;
         nbInstances +=1 ;
+        setMoveState(new Fly());
     }
 
     @Override
@@ -40,11 +41,6 @@ public class Dragon
     }
 
     @Override
-    public void Move() {
-        System.out.println("Je vole!\n");
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Dragon dragon)) return false;
@@ -64,4 +60,5 @@ public class Dragon
                 ", attackPower=" + attackPower +
                 '}';
     }
+
 }

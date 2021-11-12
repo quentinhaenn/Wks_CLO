@@ -1,7 +1,8 @@
 package fr.ensma.a3.ia.jeu.AliveElement.Human;
 
 import fr.ensma.a3.ia.jeu.AliveElement.AbstractAliveElement;
-import fr.ensma.a3.ia.jeu.actions.IMovements;
+import fr.ensma.a3.ia.jeu.actions.IMovable;
+import fr.ensma.a3.ia.jeu.actions.Walk;
 import fr.ensma.a3.ia.jeu.base.Base;
 
 
@@ -9,12 +10,13 @@ import java.util.logging.Logger;
 
 public abstract class AbstractHuman
         extends AbstractAliveElement
-        implements IMovements {
+        implements IMovable {
 
     private static final Logger LOGGER = Logger.getLogger(AbstractHuman.class.getName());
 
     public AbstractHuman(Base base, String id, float newHp) {
         super(base, id, newHp);
+        setMoveState(new Walk());
     }
 
     public String Talk(AbstractHuman interlocutor, String sentence){
