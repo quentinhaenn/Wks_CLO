@@ -1,6 +1,9 @@
 package fr.ensma.a3.ia.jeu.AliveElement.Human;
 
-import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.Catapult;
+import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.DistanceWeapon.Catapult;
+import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.MeleeWeapon.AbstractMeleeWeapon;
+import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.MeleeWeapon.Axe;
+import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.MeleeWeapon.Knife;
 import fr.ensma.a3.ia.jeu.actions.*;
 import fr.ensma.a3.ia.jeu.base.Base;
 
@@ -11,23 +14,29 @@ public class Warrior
         implements IMovable,
         IEarthAttack,
         IEarthAttacked {
-    private final int attackPower;
+    private AbstractMeleeWeapon weapon;
     private static int nbInstance = 0;
     private boolean isAssociated;
     private static final String newId = "Warrior_" + nbInstance + 1;
-    private String weapon = "Knife";
 
-    public Warrior(Base base, String id, float newHp, int attack) {
+    public Warrior(Base base, String id, float newHp) {
         super(base, id, newHp);
-        attackPower = attack;
+        weapon = new Knife(base);
         nbInstance ++;
     }
 
-    public Warrior(Base base, float newHp, int attack){
+    public Warrior(Base base, float newHp){
         super(base,newId, newHp);
-        attackPower = attack;
+        weapon = new Knife(base);
         nbInstance += 1;
     }
+
+    public Warrior(Base base, float newHp, AbstractMeleeWeapon weapon){
+        super(base,newId, newHp);
+        this.weapon = weapon;
+        nbInstance += 1;
+    }
+
 
     public void Associate(Catapult catapult){
         if (!this.isAssociated){
@@ -55,7 +64,7 @@ public class Warrior
 
     @Override
     public void EarthAttack(IEarthAttacked target) {
-        target.EarthAttacked(this.attackPower);
+        target.EarthAttacked(this.weapon.getPower());
     }
 
     @Override
@@ -63,24 +72,28 @@ public class Warrior
         this.hp -= power;
     }
 
+    public void evolveWarrior(){
+        this.weapon = new Axe(this.base);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Warrior warrior)) return false;
         if (!super.equals(o)) return false;
-        return attackPower == warrior.attackPower && isAssociated() == warrior.isAssociated();
+        return weapon == warrior.weapon && isAssociated() == warrior.isAssociated();
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), attackPower, nbInstance, isAssociated());
+        return Objects.hash(super.hashCode(), weapon, nbInstance, isAssociated());
     }
 
     @Override
     public String toString() {
         return "Warrior{" +
                 "hp=" + hp +
-                ", attackPower=" + attackPower +
+                ", Weapon=" + weapon +
                 ", nbInstance=" + nbInstance +
                 ", isAssociated=" + isAssociated +
                 ", Weapon = " + weapon +

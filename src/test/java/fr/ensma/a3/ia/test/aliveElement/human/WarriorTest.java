@@ -1,11 +1,10 @@
 package fr.ensma.a3.ia.test.aliveElement.human;
 
 import fr.ensma.a3.ia.jeu.AliveElement.Human.Warrior;
-import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.Catapult;
-import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.Munitions;
+import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.DistanceWeapon.Catapult;
+import fr.ensma.a3.ia.jeu.InanimateElement.Weapon.DistanceWeapon.Munitions;
 import fr.ensma.a3.ia.jeu.base.Base;
 import fr.ensma.a3.ia.jeu.base.EBaseColor;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -13,8 +12,8 @@ import org.junit.jupiter.api.Test;
 class WarriorTest {
 
     private static Base base = new Base("Xarsaroth", EBaseColor.Blouge);
-    private Warrior guerrier1 = new Warrior(base, "Jackie", 50.0f, 150);
-    private Warrior guerrier2 = new Warrior(base, "Michel", 50.0f, 150);
+    private Warrior guerrier1 = new Warrior(base, "Jackie", 50.0f);
+    private Warrior guerrier2 = new Warrior(base, "Michel", 50.0f);
     private Catapult catapulte = new Catapult(base, "cata_pute", 50.0f,new Munitions(100, 10));
 
 
@@ -48,7 +47,7 @@ class WarriorTest {
 
     @Test
     void testEquals() {
-        Warrior warrior1 = new Warrior(base, "Jackie", 50.0f, 150 );
+        Warrior warrior1 = new Warrior(base, "Jackie", 50.0f);
         assert (warrior1.equals(guerrier1));
     }
 

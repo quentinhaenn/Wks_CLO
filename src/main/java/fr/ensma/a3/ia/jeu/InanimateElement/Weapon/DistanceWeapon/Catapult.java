@@ -1,11 +1,11 @@
-package fr.ensma.a3.ia.jeu.InanimateElement.Weapon;
+package fr.ensma.a3.ia.jeu.InanimateElement.Weapon.DistanceWeapon;
 
 import fr.ensma.a3.ia.jeu.AliveElement.Human.Warrior;
 import fr.ensma.a3.ia.jeu.actions.*;
 import fr.ensma.a3.ia.jeu.base.Base;
 
 public class Catapult
-        extends AbstractWeapon
+        extends AbstractDistanceWeapon
         implements IAttack, IEarthAttack, IEarthAttacked, IAttacked, IMovable {
 
     private boolean isAssociated;

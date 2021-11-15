@@ -12,12 +12,19 @@ public class App {
         /**
          * Test des fonctionnalités du guerrier
          */
-        Warrior guerrier1 = new Warrior(base1, 100.0f, 20);
-        Warrior guerrier2 = new Warrior(base1,"Alain",100.0f,30);
+        Warrior guerrier1 = new Warrior(base1, 100.0f);
+        Warrior guerrier2 = new Warrior(base1,"Alain",100.0f);
         Warrior guerrier3 = guerrier1;
         boolean isEqual = guerrier1.equals(guerrier3);
         System.out.println(guerrier2);
         System.out.println(isEqual);
+
+        guerrier1.EarthAttack(guerrier2);
+
+        System.out.println(guerrier2.getHp());
+
+        guerrier1.evolveWarrior();
+        System.out.println(guerrier1.toString());
 
         String discussion = guerrier1.Talk(guerrier2, "Bonjour aventurier, j'ai perdu mon marteau!\n");
         System.out.println(discussion);

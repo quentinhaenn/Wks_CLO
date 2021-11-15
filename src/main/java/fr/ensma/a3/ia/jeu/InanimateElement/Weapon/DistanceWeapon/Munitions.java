@@ -1,4 +1,4 @@
-package fr.ensma.a3.ia.jeu.InanimateElement.Weapon;
+package fr.ensma.a3.ia.jeu.InanimateElement.Weapon.DistanceWeapon;
 
 public class Munitions {
     private int power;
