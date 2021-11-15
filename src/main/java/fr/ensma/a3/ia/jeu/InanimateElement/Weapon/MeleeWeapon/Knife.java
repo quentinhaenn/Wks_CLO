@@ -20,4 +20,11 @@ public class Knife extends AbstractMeleeWeapon implements IEarthAttack {
     public void EarthAttack(IEarthAttacked target) {
         target.EarthAttacked(this.power);
     }
+
+    @Override
+    public String toString() {
+        return " Knife{" +
+                "power=" + power +
+                ", weight=" + weight + '}' ;
+    }
 }

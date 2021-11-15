@@ -53,7 +53,7 @@ public class Warrior
     }
 
     @Override
-    public void Move() {
+    public void Move() throws Exception {
         super.Move();
     }
 
@@ -96,7 +96,6 @@ public class Warrior
                 ", Weapon=" + weapon +
                 ", nbInstance=" + nbInstance +
                 ", isAssociated=" + isAssociated +
-                ", Weapon = " + weapon +
                 '}';
     }
 }

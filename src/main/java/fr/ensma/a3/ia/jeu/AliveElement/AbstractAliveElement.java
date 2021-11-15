@@ -1,9 +1,7 @@
 package fr.ensma.a3.ia.jeu.AliveElement;
 
 import fr.ensma.a3.ia.jeu.AbstractGameElement;
-import fr.ensma.a3.ia.jeu.actions.IMovable;
-import fr.ensma.a3.ia.jeu.actions.ITroupable;
-import fr.ensma.a3.ia.jeu.actions.Immobile;
+import fr.ensma.a3.ia.jeu.actions.*;
 import fr.ensma.a3.ia.jeu.base.Base;
 
 import java.util.Objects;
@@ -15,6 +13,26 @@ public abstract class AbstractAliveElement
         ITroupable{
     protected float hp;
     protected String id;
+
+    public IEtatPerso getEtatCourant() {
+        return etatCourant;
+    }
+
+    public void setEtatCourant(IEtatPerso newEtat) {
+        this.etatCourant = newEtat;
+    }
+
+    public IEtatPerso getRest() {
+        return rest;
+    }
+
+    public IEtatPerso getInMove() {
+        return inMove;
+    }
+
+    protected IEtatPerso etatCourant;
+    protected IEtatPerso rest;
+    protected IEtatPerso inMove;
 
     public void setMoveState(IMovable moveState) {
         this.moveState = moveState;
@@ -28,6 +46,10 @@ public abstract class AbstractAliveElement
         hp = newHp;
         id = newId;
         moveState = new Immobile();
+        etatCourant = new Rest(this);
+        rest = new Rest(this);
+        inMove = new InMove(this);
+
     }
 
     public float getHp() {
@@ -70,7 +92,7 @@ public abstract class AbstractAliveElement
     }
 
     @Override
-    public void Move(){
+    public void Move() throws Exception {
         moveState.Move();
     }
 }

@@ -11,4 +11,12 @@ public abstract class AbstractWeapon extends AbstractInanimateElement {
     public AbstractWeapon(Base base) {
         super(base);
     }
+
+    @Override
+    public String toString() {
+        return "AbstractWeapon{" +
+                "resistance=" + resistance +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }

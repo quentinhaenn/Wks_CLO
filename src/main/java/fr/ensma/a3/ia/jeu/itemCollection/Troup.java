@@ -33,7 +33,7 @@ public class Troup extends AbstractGameElement
     }
 
     @Override
-    public void Move() {
+    public void Move() throws Exception {
         for (ITroupable character : listTroupe){
             character.Move();
         }

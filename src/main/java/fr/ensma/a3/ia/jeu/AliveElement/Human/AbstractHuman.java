@@ -2,6 +2,7 @@ package fr.ensma.a3.ia.jeu.AliveElement.Human;
 
 import fr.ensma.a3.ia.jeu.AliveElement.AbstractAliveElement;
 import fr.ensma.a3.ia.jeu.actions.IMovable;
+import fr.ensma.a3.ia.jeu.actions.Rest;
 import fr.ensma.a3.ia.jeu.actions.Run;
 import fr.ensma.a3.ia.jeu.actions.Walk;
 import fr.ensma.a3.ia.jeu.base.Base;
@@ -15,9 +16,12 @@ public abstract class AbstractHuman
 
     private static final Logger LOGGER = Logger.getLogger(AbstractHuman.class.getName());
 
+
+
     public AbstractHuman(Base base, String id, float newHp) {
         super(base, id, newHp);
         setMoveState(new Walk());
+        setEtatCourant(new Rest(this));
     }
 
     public void movementEvolution(){
@@ -31,8 +35,22 @@ public abstract class AbstractHuman
     }
 
     @Override
-    public void Move() {
-        System.out.println("Je marche! \n");
+    public void Move() throws Exception {
+        try{
+            etatCourant.Movement();
+            System.out.println("Je marche! \n");}
+        catch (Exception e){
+            System.out.println("Je suis déjà en mouvement !");
+        }
     }
 
+    public void Rest() throws Exception {
+        try{
+            etatCourant.Stop();
+            System.out.println("Je me repose!");
+        }
+        catch (Exception e){
+            System.out.println("Je suis déjà à l'arrêt !");
+        }
+    }
 }

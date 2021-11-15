@@ -19,4 +19,12 @@ public class AbstractMeleeWeapon extends AbstractWeapon {
     public int getPower() {
         return power;
     }
+
+    @Override
+    public String toString() {
+        return "Weapon type = Melee" +
+                "power=" + power +
+                ", weight=" + weight +
+                '}';
+    }
 }

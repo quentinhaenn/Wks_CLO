@@ -6,7 +6,7 @@ import fr.ensma.a3.ia.jeu.base.Base;
 import fr.ensma.a3.ia.jeu.base.EBaseColor;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("Bienvenue à Xarsaroth! \n");
         Base base1 = new Base("Xarsaroth", EBaseColor.Blouge);
         /**
@@ -25,6 +25,10 @@ public class App {
 
         guerrier1.evolveWarrior();
         System.out.println(guerrier1.toString());
+
+        guerrier1.Move();
+        guerrier1.Rest();
+        guerrier1.Rest();
 
         String discussion = guerrier1.Talk(guerrier2, "Bonjour aventurier, j'ai perdu mon marteau!\n");
         System.out.println(discussion);
